@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canada 2013-2022 – Mes AirPods</title>
+    <!-- Feuille de style commune à toutes les pages -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- La classe du body change le dégradé du bandeau selon la période -->
+<body class="canada">
+
+    <!-- ===== En-tête et menu de navigation ===== -->
+    <header class="entete">
+        <div class="logo">Mes AirPods</div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="page1.html">Côte d’Ivoire</a></li>
+                <li><a href="page2.html">Burkina Faso</a></li>
+                <li><a href="page3.html">Ghana</a></li>
+                <li><a href="page4.html" class="actif">Canada</a></li>
+                <li><a href="page5.html">Saint-Jérôme</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== Bandeau de la page ===== -->
+    <section class="hero">
+        <p class="piste">Piste 4 sur 5</p>
+        <span class="annee">2013 – 2022</span>
+        <h1>Canada</h1>
+        <p class="sous-titre">Le soccer, la vie belle et joyeuse.</p>
+    </section>
+
+    <!-- ===== Contenu principal ===== -->
+    <main class="contenu">
+
+        <!-- Texte de la période -->
+        <section class="texte">
+            <p>En 2013, ma famille quitte le Burkina Faso pour le <span class="mot-cle">Canada</span>. Nouveau pays, nouvelle école, nouveau climat : le premier hiver m’a surpris, mais j’ai vite trouvé ma place grâce au soccer. Les premiers mois ont été un peu difficiles, mais le sport m’a permis de me faire des amis très vite. Pendant neuf ans, le ballon est devenu le centre de ma vie.</p>
+            <p>J’ai commencé au CS Saint-Laurent, puis j’ai progressé année après année. J’ai fini par réussir à jouer pour le <span class="mot-cle">CF Montréal junior</span> et à faire partie de l’équipe du Québec. Quand j’y repense, j’en suis encore fier.</p>
+            <p>J’étais un enfant turbulent, toujours en mouvement, parfois trop sûr de moi. À l’école, mes enseignants me le rappelaient souvent. Mais à la maison, l’ambiance était très bonne. Ma famille me soutenait, venait voir mes matchs et m’attendait après les entraînements. Nous nous sommes installés, nous avons appris à aimer la neige, nous avons fait de nouveaux amis, et la guerre était loin derrière nous. Les entraînements du soir étaient mon moment préféré de la journée.</p>
+            <p>Si je pense à cette époque, une seule musique me vient en tête. La vie était belle et joyeuse. Je l’écoutais dans l’autobus en allant aux entraînements, dans le vestiaire avant les matchs et le soir en rentrant. Chaque fois que je l’entends aujourd’hui, je retrouve les terrains, l’odeur du gazon mouillé, les voyages avec l’équipe et le sentiment que tout était possible.</p>
+            <p>Mes écouteurs étaient devenus mon rituel d’avant-match : je me coupais du bruit, je respirais, et j’entrais sur le terrain concentré. Ces neuf années m’ont appris la discipline, le travail d’équipe et la patience. Elles m’ont aussi montré que la joie se cache souvent dans les gestes les plus simples, comme écouter une chanson avant un match.</p>
+            <!-- Lecteur audio de la période -->
+            <div class="carte-audio">
+                <h3>Piste audio : Canada</h3>
+                <p>La musique qui me vient en tête quand je pense à cette époque.</p>
+                <audio controls>
+                    <source src="audio/canada.mp3" type="audio/mpeg">
+                    Ton navigateur ne peut pas lire cet extrait audio.
+                </audio>
+            </div>
+        </section>
+
+        <!-- Image(s) de la période -->
+        <aside class="visuel">
+                <div class="photo">
+                    <img src="images/canada-vieux-montreal.jpg" alt="Rue piétonne du Vieux-Montréal avec des passants">
+                    <p class="legende">Une rue piétonne du Vieux-Montréal.</p>
+                </div>
+                <div class="photo">
+                    <img src="images/canada-drake.jpg" alt="Image du titre In My Feelings de Drake">
+                    <p class="legende">Image du titre « In My Feelings » de Drake.</p>
+                </div>
+        </aside>
+
+    </main>
+
+    <!-- ===== Navigation entre les pistes ===== -->
+    <div class="pistes-nav">
+        <a href="page3.html">&lt; Piste précédente : Ghana</a>
+        <a href="page5.html">Piste suivante : Saint-Jérôme &gt;</a>
+    </div>
+
+    <!-- ===== Pied de page ===== -->
+    <footer class="pied">
+        <p>TP2 – Site Web d’un objet · Cours 582-W1A-BB · Automne 2026</p>
+    </footer>
+
+</body>
+</html>

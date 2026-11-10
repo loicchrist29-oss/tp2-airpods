@@ -1,0 +1,401 @@
+/* ==========================================================
+   TP2 - Site Web d'un objet : mes AirPods, ma vie en pistes
+   Feuille de style commune à toutes les pages (cohérence)
+   Sections :
+   1. Base
+   2. Menu
+   3. Bandeau (hero) et dégradés par période
+   4. Contenu (Flexbox)
+   5. Carte audio
+   6. Accueil : boîtier et cartes
+   7. Navigation entre les pistes et pied de page
+   ========================================================== */
+
+
+/* ---------- 1. Base ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #1f2a44;
+    background-color: #eef4ff;
+}
+
+h1, h2, h3 {
+    color: #0b2a6f;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: bold;
+}
+
+a {
+    color: #0071e3;
+    transition: all 0.3s ease;
+}
+
+
+/* ---------- 2. Menu (Flexbox) ---------- */
+
+.entete {
+    background-color: #ffffff;
+    border-bottom: 1px solid #d3e0f5;
+    padding: 18px 20px 14px 20px;
+    text-align: center;
+}
+
+.logo {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.menu li {
+    display: flex;
+}
+
+.menu a {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #1f2a44;
+    background-color: #e3eeff;
+}
+
+.menu a:hover, .menu a:focus {
+    background-color: #0071e3;
+    color: #ffffff;
+}
+
+/* Lien de la page où on se trouve */
+.menu a.actif {
+    background-color: #0071e3;
+    color: #ffffff;
+}
+
+
+/* ---------- 3. Bandeau (hero) et dégradés par période ---------- */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 70px 20px 60px 20px;
+}
+
+/* Un dégradé différent selon la classe placée sur <body> */
+.accueil .hero {
+    background: linear-gradient(135deg, #0071e3 0%, #5e5ce6 100%);
+}
+
+.cote-ivoire .hero {
+    background: linear-gradient(135deg, #f58220 0%, #1fa65a 100%);
+}
+
+.burkina .hero {
+    background: linear-gradient(135deg, #e63946 0%, #2a9d5c 100%);
+}
+
+.ghana .hero {
+    background: linear-gradient(135deg, #d62839 0%, #f0a020 100%);
+}
+
+.canada .hero {
+    background: linear-gradient(135deg, #d7263d 0%, #ff6b6b 100%);
+}
+
+.saint-jerome .hero {
+    background: linear-gradient(135deg, #2f80ed 0%, #3fc1e8 100%);
+}
+
+/* Petit voyant lumineux du boîtier AirPods devant le numéro de piste */
+.piste {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.piste::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #7dff8a;
+    box-shadow: 0 0 10px 3px #7dff8a;
+}
+
+/* Le titre est un conteneur flex : le trait en dessous se centre tout seul */
+.hero h1 {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 46px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+/* Trait sous le titre */
+.hero h1::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    margin-top: 18px;
+    border-radius: 2px;
+    background-color: #ffffff;
+}
+
+.annee {
+    padding: 4px 18px;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+}
+
+.hero .sous-titre {
+    width: 60%;
+    font-size: 19px;
+}
+
+
+/* ---------- 4. Contenu (Flexbox) ---------- */
+
+.contenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0 30px 0;
+}
+
+.texte {
+    flex: 0 1 580px;
+}
+
+.texte p {
+    margin-bottom: 20px;
+}
+
+.texte h2 {
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+/* Mots importants mis en valeur avec <span> */
+.mot-cle {
+    font-weight: bold;
+    background: linear-gradient(transparent 60%, #ffe58a 60%);
+}
+
+.visuel {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex: 0 1 320px;
+}
+
+.photo img {
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+.legende {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #555555;
+    margin-top: 10px;
+}
+
+
+/* ---------- 5. Carte audio (boîtier AirPods) ---------- */
+
+.carte-audio {
+    margin-top: 30px;
+    padding: 28px 24px 24px 24px;
+    border-radius: 36px;
+    background: linear-gradient(180deg, #ffffff 0%, #dce9ff 100%);
+    border: 1px solid #d3e0f5;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+.carte-audio h3 {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+/* Petite note de musique devant le titre */
+.carte-audio h3::before {
+    content: "♪ ";
+    color: #0a66c2;
+}
+
+.carte-audio p {
+    font-size: 15px;
+    margin-bottom: 14px;
+}
+
+.carte-audio audio {
+    width: 100%;
+}
+
+
+/* ---------- 6. Accueil : boîtier et cartes ---------- */
+
+/* Boîtier dessiné en CSS : le trait du couvercle est fait avec le dégradé,
+   le voyant est placé en bas grâce à Flexbox */
+.boitier {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 170px;
+    height: 88px;
+    padding-bottom: 22px;
+    margin-bottom: 34px;
+    border-radius: 55px 55px 45px 45px;
+    background: linear-gradient(180deg, #ffffff 0%, #ffffff 38%, #b5b5bb 38%, #b5b5bb 40%, #e6e6ea 40%, #cfcfd6 100%);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Voyant */
+.boitier::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #7dff8a;
+    box-shadow: 0 0 8px 2px #7dff8a;
+}
+
+.concept {
+    width: 60%;
+    margin: 0 auto;
+    padding: 50px 0 10px 0;
+    text-align: center;
+}
+
+.concept h2 {
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+.concept p {
+    margin-bottom: 20px;
+}
+
+.cartes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0 40px 0;
+}
+
+.carte {
+    width: 300px;
+    background-color: #ffffff;
+    border: 1px solid #d3e0f5;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+/* La carte se soulève au survol */
+.carte:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.18);
+}
+
+.carte img {
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+    border-radius: 19px 19px 0 0;
+}
+
+.carte .carte-texte {
+    padding: 16px 18px 20px 18px;
+}
+
+.carte h3 {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.carte p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.carte a {
+    font-weight: bold;
+}
+
+
+/* ---------- 7. Navigation entre les pistes et pied de page ---------- */
+
+.pistes-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0 40px 0;
+}
+
+.pistes-nav a {
+    padding: 12px 22px;
+    border-radius: 24px;
+    background-color: #0071e3;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.pistes-nav a:hover, .pistes-nav a:focus {
+    background-color: #5e5ce6;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.pied {
+    background-color: #ffffff;
+    padding: 24px 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #555555;
+    border-top: 1px solid #d3e0f5;
+}

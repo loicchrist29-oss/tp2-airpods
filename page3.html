@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghana 2013 – Mes AirPods</title>
+    <!-- Feuille de style commune à toutes les pages -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- La classe du body change le dégradé du bandeau selon la période -->
+<body class="ghana">
+
+    <!-- ===== En-tête et menu de navigation ===== -->
+    <header class="entete">
+        <div class="logo">Mes AirPods</div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="page1.html">Côte d’Ivoire</a></li>
+                <li><a href="page2.html">Burkina Faso</a></li>
+                <li><a href="page3.html" class="actif">Ghana</a></li>
+                <li><a href="page4.html">Canada</a></li>
+                <li><a href="page5.html">Saint-Jérôme</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== Bandeau de la page ===== -->
+    <section class="hero">
+        <p class="piste">Piste 3 sur 5</p>
+        <span class="annee">2013</span>
+        <h1>Ghana</h1>
+        <p class="sous-titre">Deux semaines dans un village inconnu.</p>
+    </section>
+
+    <!-- ===== Contenu principal ===== -->
+    <main class="contenu">
+
+        <!-- Texte de la période -->
+        <section class="texte">
+            <p>Avant de quitter le Burkina Faso, ma famille et moi avons passé deux semaines dans un <span class="mot-cle">village du Ghana</span>. Nous ne connaissions ni l’endroit ni les gens qui y vivaient.</p>
+            <p>Quand la guerre est arrivée en Côte d’Ivoire, nous avions dû partir d’urgence, sans regarder derrière nous, par peur d’être tués par des rebelles. Ces deux semaines au Ghana ont été une parenthèse étrange, entre l’inquiétude et l’attente. Chaque jour, nous espérions de bonnes nouvelles pour pouvoir continuer notre route.</p>
+            <p>Ma mère avait un lecteur MP3, et j’écoutais la même musique en boucle. Dans ce village inconnu, c’était la seule chose familière. Sans le savoir, j’avais déjà trouvé mon <span class="mot-cle">refuge</span>.</p>
+            <!-- Lecteur audio de la période -->
+            <div class="carte-audio">
+                <h3>Piste audio : Ghana</h3>
+                <p>La musique que j’écoutais en boucle sur le lecteur MP3 de ma mère.</p>
+                <audio controls>
+                    <source src="audio/ghana.mp3" type="audio/mpeg">
+                    Ton navigateur ne peut pas lire cet extrait audio.
+                </audio>
+            </div>
+        </section>
+
+        <!-- Image(s) de la période -->
+        <aside class="visuel">
+                <div class="photo">
+                    <img src="images/ghana-village.jpg" alt="Vue sur un village aux toits de tôle">
+                    <p class="legende">Un village aux toits de tôle.</p>
+                </div>
+                <div class="photo">
+                    <img src="images/ghana-knaan.jpg" alt="Pochette de Wavin’ Flag de K’naan">
+                    <p class="legende">Pochette de « Wavin’ Flag » de K’naan.</p>
+                </div>
+        </aside>
+
+    </main>
+
+    <!-- ===== Navigation entre les pistes ===== -->
+    <div class="pistes-nav">
+        <a href="page2.html">&lt; Piste précédente : Burkina Faso</a>
+        <a href="page4.html">Piste suivante : Canada &gt;</a>
+    </div>
+
+    <!-- ===== Pied de page ===== -->
+    <footer class="pied">
+        <p>TP2 – Site Web d’un objet · Cours 582-W1A-BB · Automne 2026</p>
+    </footer>
+
+</body>
+</html>

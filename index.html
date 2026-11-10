@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes AirPods, ma vie en pistes – Accueil</title>
+    <!-- Feuille de style commune à toutes les pages -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- La classe du body change le dégradé du bandeau selon la période -->
+<body class="accueil">
+
+    <!-- ===== En-tête et menu de navigation ===== -->
+    <header class="entete">
+        <div class="logo">Mes AirPods</div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html" class="actif">Accueil</a></li>
+                <li><a href="page1.html">Côte d’Ivoire</a></li>
+                <li><a href="page2.html">Burkina Faso</a></li>
+                <li><a href="page3.html">Ghana</a></li>
+                <li><a href="page4.html">Canada</a></li>
+                <li><a href="page5.html">Saint-Jérôme</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== Bandeau de la page ===== -->
+    <section class="hero">
+        <!-- Boîtier AirPods dessiné en CSS -->
+        <div class="boitier"></div>
+        <span class="annee">2008 – 2026</span>
+        <h1>Mes AirPods, ma vie en pistes</h1>
+        <p class="sous-titre">Un objet, cinq pistes et dix-huit années de souvenirs.</p>
+    </section>
+
+    <!-- ===== Contenu principal ===== -->
+    <!-- Concept du site -->
+    <section class="concept">
+        <h2>Le concept</h2>
+        <p>Mes premiers écouteurs étaient filaires, bien avant les AirPods, mais le geste est resté le même : <span class="mot-cle">fermer le monde autour de moi</span> et laisser la musique parler.</p>
+        <p>Ce petit objet blanc est devenu le fil conducteur de ma vie, et ce site la raconte à travers lui. Chaque page est une piste, avec sa propre musique : la Côte d’Ivoire, le Burkina Faso, le Ghana, le Canada, puis Saint-Jérôme. Dans les moments joyeux comme dans les moments difficiles, mes écouteurs ont été ma bulle.</p>
+        <p>Ouvre le boîtier, appuie sur lecture et suis-moi, de 2008 à aujourd’hui.</p>
+        <div class="carte-audio">
+            <h3>Générique d’ouverture</h3>
+            <p>Avant de commencer, appuie sur lecture.</p>
+            <audio controls>
+                    <source src="audio/generique.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </section>
+
+    <!-- Les cinq pistes (Flexbox) -->
+    <section class="cartes">
+        <article class="carte">
+            <img src="images/cote-ivoire-basilique.jpg" alt="La basilique de Yamoussoukro vue à travers des palmes">
+            <div class="carte-texte">
+                <p>Piste 1 · 2008-2011</p>
+                <h3>Côte d’Ivoire</h3>
+                <p>La naissance à Yopougon et la musique pendant la guerre.</p>
+                <a href="page1.html">Écouter cette piste</a>
+            </div>
+        </article>
+        <article class="carte">
+            <img src="images/burkina-bezou.jpg" alt="Pochette du single Bezou de Faso Kouamba">
+            <div class="carte-texte">
+                <p>Piste 2 · 2011-2013</p>
+                <h3>Burkina Faso</h3>
+                <p>Deux années de chaleur humaine et de bonne humeur.</p>
+                <a href="page2.html">Écouter cette piste</a>
+            </div>
+        </article>
+        <article class="carte">
+            <img src="images/ghana-village.jpg" alt="Vue sur un village aux toits de tôle">
+            <div class="carte-texte">
+                <p>Piste 3 · 2013</p>
+                <h3>Ghana</h3>
+                <p>Deux semaines dans un village inconnu.</p>
+                <a href="page3.html">Écouter cette piste</a>
+            </div>
+        </article>
+        <article class="carte">
+            <img src="images/canada-vieux-montreal.jpg" alt="Rue piétonne du Vieux-Montréal avec des passants">
+            <div class="carte-texte">
+                <p>Piste 4 · 2013-2022</p>
+                <h3>Canada</h3>
+                <p>Le soccer, le CF Montréal junior et l’équipe du Québec.</p>
+                <a href="page4.html">Écouter cette piste</a>
+            </div>
+        </article>
+        <article class="carte">
+            <img src="images/saint-jerome.jpg" alt="Rue principale de Saint-Jérôme avec le clocher de la cathédrale">
+            <div class="carte-texte">
+                <p>Piste 5 · 2022-2026</p>
+                <h3>Saint-Jérôme</h3>
+                <p>Les écouteurs comme refuge quand la maison devient tendue.</p>
+                <a href="page5.html">Écouter cette piste</a>
+            </div>
+        </article>
+    </section>
+
+    <!-- ===== Navigation entre les pistes ===== -->
+    <div class="pistes-nav">
+        <span></span>
+        <a href="page1.html">Piste suivante : Côte d’Ivoire &gt;</a>
+    </div>
+
+    <!-- ===== Pied de page ===== -->
+    <footer class="pied">
+        <p>TP2 – Site Web d’un objet · Cours 582-W1A-BB · Automne 2026</p>
+    </footer>
+
+</body>
+</html>

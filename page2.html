@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burkina Faso 2011-2013 – Mes AirPods</title>
+    <!-- Feuille de style commune à toutes les pages -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- La classe du body change le dégradé du bandeau selon la période -->
+<body class="burkina">
+
+    <!-- ===== En-tête et menu de navigation ===== -->
+    <header class="entete">
+        <div class="logo">Mes AirPods</div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="page1.html">Côte d’Ivoire</a></li>
+                <li><a href="page2.html" class="actif">Burkina Faso</a></li>
+                <li><a href="page3.html">Ghana</a></li>
+                <li><a href="page4.html">Canada</a></li>
+                <li><a href="page5.html">Saint-Jérôme</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== Bandeau de la page ===== -->
+    <section class="hero">
+        <p class="piste">Piste 2 sur 5</p>
+        <span class="annee">2011 – 2013</span>
+        <h1>Burkina Faso</h1>
+        <p class="sous-titre">La chaleur des gens, malgré tout.</p>
+    </section>
+
+    <!-- ===== Contenu principal ===== -->
+    <main class="contenu">
+
+        <!-- Texte de la période -->
+        <section class="texte">
+            <p>En 2011, à cause de la guerre civile, ma famille a dû quitter la Côte d’Ivoire pour le <span class="mot-cle">Burkina Faso</span>. Nous y sommes restés deux ans, et j’en garde de très bons souvenirs.</p>
+            <p>Ce que je retiens, c’est la chaleur des gens. Ils étaient très gentils, et il faisait bon vivre là-bas. Leur humeur était extrêmement positive, même si la vie était très compliquée financièrement. Les sourires étaient plus forts que les soucis.</p>
+            <p>Au Burkina, une musique jouait partout. Si tu la mets, tout le monde l’écoute en boucle et la chante avec toi. Elle est devenue la <span class="mot-cle">bande sonore</span> de ces deux années.</p>
+            <p>Ce pays m’a appris que le bonheur dépend moins de l’argent que des personnes qui nous entourent.</p>
+            <!-- Lecteur audio de la période -->
+            <div class="carte-audio">
+                <h3>Piste audio : Burkina Faso</h3>
+                <p>La musique que tout le monde écoute en boucle là-bas.</p>
+                <audio controls>
+                    <source src="audio/burkina.mp3" type="audio/mpeg">
+                    Ton navigateur ne peut pas lire cet extrait audio.
+                </audio>
+            </div>
+        </section>
+
+        <!-- Image(s) de la période -->
+        <aside class="visuel">
+                <div class="photo">
+                    <img src="images/burkina-bezou.jpg" alt="Pochette du single Bezou de Faso Kouamba">
+                    <p class="legende">Pochette du single « Bezou » de Faso Kouamba.</p>
+                </div>
+        </aside>
+
+    </main>
+
+    <!-- ===== Navigation entre les pistes ===== -->
+    <div class="pistes-nav">
+        <a href="page1.html">&lt; Piste précédente : Côte d’Ivoire</a>
+        <a href="page3.html">Piste suivante : Ghana &gt;</a>
+    </div>
+
+    <!-- ===== Pied de page ===== -->
+    <footer class="pied">
+        <p>TP2 – Site Web d’un objet · Cours 582-W1A-BB · Automne 2026</p>
+    </footer>
+
+</body>
+</html>

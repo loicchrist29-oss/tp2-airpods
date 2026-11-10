@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Côte d’Ivoire 2008-2011 – Mes AirPods</title>
+    <!-- Feuille de style commune à toutes les pages -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- La classe du body change le dégradé du bandeau selon la période -->
+<body class="cote-ivoire">
+
+    <!-- ===== En-tête et menu de navigation ===== -->
+    <header class="entete">
+        <div class="logo">Mes AirPods</div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="page1.html" class="actif">Côte d’Ivoire</a></li>
+                <li><a href="page2.html">Burkina Faso</a></li>
+                <li><a href="page3.html">Ghana</a></li>
+                <li><a href="page4.html">Canada</a></li>
+                <li><a href="page5.html">Saint-Jérôme</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== Bandeau de la page ===== -->
+    <section class="hero">
+        <p class="piste">Piste 1 sur 5</p>
+        <span class="annee">2008 – 2011</span>
+        <h1>Côte d’Ivoire</h1>
+        <p class="sous-titre">Yopougon, la musique comme bulle.</p>
+    </section>
+
+    <!-- ===== Contenu principal ===== -->
+    <main class="contenu">
+
+        <!-- Texte de la période -->
+        <section class="texte">
+            <p>Je suis né en 2008 à <span class="mot-cle">Yopougon</span>, un quartier très vivant d’Abidjan, en Côte d’Ivoire. J’y ai vécu mes trois premières années, entouré de ma famille, du bruit de la rue et de la musique qui sortait de partout.</p>
+            <p>Puis la guerre civile a éclaté. Dehors, policiers et rebelles s’affrontaient, et sortir devenait dangereux. Pourtant, un souvenir m’est resté : malgré les attaques, nous mettions de la musique à la maison, comme si nous étions dans une comédie. Nous ne voyions rien autour de nous, nous étions dans notre <span class="mot-cle">bulle</span>.</p>
+            <p>Cette chanson m’a marqué pour toujours. C’était déjà ma façon de fermer le monde extérieur, bien avant d’avoir des écouteurs sur les oreilles.</p>
+            <!-- Lecteur audio de la période -->
+            <div class="carte-audio">
+                <h3>Piste audio : Côte d’Ivoire</h3>
+                <p>La musique que j’entendais pendant la guerre.</p>
+                <audio controls>
+                    <source src="audio/cote_d_ivoire.mp3" type="audio/mpeg">
+                    Ton navigateur ne peut pas lire cet extrait audio.
+                </audio>
+            </div>
+        </section>
+
+        <!-- Image(s) de la période -->
+        <aside class="visuel">
+                <div class="photo">
+                    <img src="images/cote-ivoire-militaires.jpg" alt="Des militaires en tenue de combat assis sur un véhicule">
+                    <p class="legende">Des militaires pendant la crise en Côte d’Ivoire.</p>
+                </div>
+                <div class="photo">
+                    <img src="images/cote-ivoire-basilique.jpg" alt="La basilique de Yamoussoukro vue à travers des palmes">
+                    <p class="legende">La basilique de Yamoussoukro.</p>
+                </div>
+        </aside>
+
+    </main>
+
+    <!-- ===== Navigation entre les pistes ===== -->
+    <div class="pistes-nav">
+        <a href="index.html">&lt; Piste précédente : Accueil</a>
+        <a href="page2.html">Piste suivante : Burkina Faso &gt;</a>
+    </div>
+
+    <!-- ===== Pied de page ===== -->
+    <footer class="pied">
+        <p>TP2 – Site Web d’un objet · Cours 582-W1A-BB · Automne 2026</p>
+    </footer>
+
+</body>
+</html>
